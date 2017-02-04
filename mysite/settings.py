@@ -25,7 +25,7 @@ SECRET_KEY = 'md&^f&s&7m(+t8jp4bew+s@)1g^_w2!&_+i797b2r*7(0djkq0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['veventos.pythonanywhere.com']
 
 
 # Application definition
