@@ -1,10 +1,10 @@
+# -*- coding: utf-8 -*-
 from django.db import models
 
-# Create your models here.
-class Contact(models.Model):
-        nome = models.CharField(max_length=100)
+class Inscricao(models.Model):
+        nome = models.CharField(max_length=200)
         email = models.EmailField(unique=True)
-        text_area = models.TextField()
+        text_contato = models.TextField()
 
         class Meta:
                 verbose_name = (u'nome')

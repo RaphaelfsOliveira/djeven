@@ -12,8 +12,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+from unipath import Path #app contact
+BASE_DIR = Path(__file__).parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -38,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'contact', #app contact
+    'cadastro', #app contact
 )
 
 MIDDLEWARE_CLASSES = (
@@ -79,7 +81,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR.child('db.sqlite3'), #app contact Unipath aqui
     }
 }
 
@@ -87,7 +90,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br' #'en-us'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
