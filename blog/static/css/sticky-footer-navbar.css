@@ -1,0 +1,186 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #000;
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+/* configuração de links geral */
+a:active,
+a:visited,
+a:link {
+  text-decoration:none;
+  color: #ffffff;
+}
+
+header a {
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header a:hover {
+  color: #000000;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*--------------configuração navbar-top-----------------------*/
+
+/*.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #000;
+}*/
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 42px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
+}
+
+/*.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}*/
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 27px;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 2px;
+    border-color: #000000;
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 0;
+}
+
+.navbar-header {
+    border: #000;
+}
+
+body .navbar-fixed-top{
+  background-color: #000;
+}
+
+/*----------------------------------buttom----------------------------------*/
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+/*------------------centralizar titulo e background-----------------------*/
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('img/cafe1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 600px;
+}
+
+.jumbotron h2 {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  text-shadow:#000 2px -2px 3px, #000 -2px 2px 3px, #000 2px 2px 3px, #000 -2px -2px 3px;
+}
+
+.jumbotron h3 {
+  font-size: 40px;
+  margin: 0 0 20px;
+  color: #fff;
+  text-shadow:#000 2px -2px 3px, #000 -2px 2px 3px, #000 2px 2px 3px, #000 -2px -2px 3px;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .col-sm-4 {
+    float: left;
+    /*text-align: center;*/
+    padding-top: 25px;
+    font-size: 12px;
+}
+
+/*----------- link footer ------------------------*/
+footer .col-sm-4 a:visited, a:link, a:active{
+    color: #5e5e5e;
+}
+
+footer .col-sm-4 a:hover {
+    color: #fff;
+}
+
+footer .col-sm-1 a{
+    padding: 5px;
+}
+/*-----------footer ------------------------*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .container {
+    padding-top: 15px;
+}
