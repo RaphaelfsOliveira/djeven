@@ -144,8 +144,8 @@ footer .col-sm-8 {
 footer .col-sm-4 {
     float: left;
     /*text-align: center;*/
-    padding-top: 25px;
-    font-size: 12px;
+    /*padding-top: 25px;*/
+    font-size: 25px;
 }
 
 /*----------- link footer ------------------------*/
