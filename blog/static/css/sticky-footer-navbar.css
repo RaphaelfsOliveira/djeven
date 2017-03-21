@@ -117,7 +117,8 @@ code {
   background-image: url('img/cafe1.jpg');
   background-size: cover;
   background-position: center;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
   height: 600px;
 }
 
@@ -150,7 +151,7 @@ footer .col-sm-4 {
 
 /*----------- link footer ------------------------*/
 footer .col-sm-4 a:visited, a:link, a:active{
-    color: #5e5e5e;
+    color: #fff;
 }
 
 footer .col-sm-4 a:hover {
