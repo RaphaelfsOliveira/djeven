@@ -1,12 +1,18 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/base_test.html' %}
 
 {% block content %}
-        {% if post.published_date %}
-            <div>
-              <h1><a href="">{{ post.title }}</a></h1>
-              <p>Autor: {{ post.author }}</p>
-              <p>{{ post.text|linebreaksbr }}</p>
-              <p>published: {{ post.published_date }}</p>
-            </div>
-        {% endif %}
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row text-center">
+          {% if post.published_date %}
+              <div>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>Autor: {{ post.author }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <p>published: {{ post.published_date }}</p>
+              </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
 {% endblock content %}
