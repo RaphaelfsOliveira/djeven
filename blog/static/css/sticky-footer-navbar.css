@@ -114,10 +114,10 @@ code {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('img/cafe1.jpg');
+  /*background-image: url('static/img/cafe1.jpg');*/
+  background-color: #000;
   background-size: cover;
   background-position: center;
-  background-color: #000;
   color: #fff;
   height: 600px;
 }
